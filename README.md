@@ -21,29 +21,29 @@ Mock authentication (no database required)
 
 # Getting Started
 ## Prerequisites
-1. **Clone the Repository**
-git clone <repo-url>
+1. **Clone the Repository**  
+git clone repo-url  
 
-2. **Navigate into the Project Folder**
-cd alkira-ui-challenge
+2. **Navigate into the Project Folder**  
+cd alkira-ui-challenge  
 
-3. **Install Dependencies**
-Make sure you have Node.js installed (v16+ recommended) and npm or yarn. Then, clone the repo.
+3. **Install Dependencies**  
+Make sure you have Node.js installed (v16+ recommended) and npm or yarn. Then, clone the repo.  
 Using npm: npm install  
 Using yarn: yarn install  
 
-4. **Start the development server**
+4. **Start the development server**  
 Using npm: npm run dev  
-Using yarn: yarn dev  
+Using yarn: yarn dev    
 
 Open your browser and navigate to: http://localhost:3000
 
-5. **Open a New Terminal**
-While the server is running, open a new terminal window and navigate to the project folder again:  
+5. **Open a New Terminal**  
+While the server is running, open a new terminal window and navigate to the project folder again.
 
-6. **Open Cypress**
-Cypress is used to test login, MFA, and access control flows.  
-
+6. **Open Cypress**  
+Cypress is used to test login, MFA, and access control flows.   
+  
 npx cypress open 
 Using yarn: yarn cypress open  
 
@@ -62,6 +62,6 @@ If login.cy.ts does not appear:
     Add your test scripts manually from the file in the repo
 
 
-The GUI will run the test cases interactively, showing the browser and commands as they execute.
+The Cypress interface will run the test cases interactively, showing the browser and commands as they execute.
 
 Ensure your Next.js app is running (npm run dev) while executing Cypress tests.
