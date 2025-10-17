@@ -30,8 +30,11 @@ describe("Login + MFA + Signup Flow", () => {
       cy.contains("Redirecting to MFA").should("be.visible");
       cy.url().should("include", "/otp");
   
-      // Enter OTP
-      cy.get('#otp').type("123456");
+      // Enter incorrect OTP
+      cy.get('#otp').type("123457");
+      cy.get('button[type="submit"]').click();
+      // Enter correct OTP
+      cy.get('#otp').clear().type("123456");
       cy.get('button[type="submit"]').click();
   
       // Dashboard
