@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Objective
+
+Implement a simple login process with MFA and demonstrate basic access control. The project evaluates technical skills, design decisions, and problem-solving.
+
+## Features
+Login page with email and password input.
+Multi-Factor Authentication (MFA) via a mock OTP/code.
+Simple sign-up flow redirecting to a separate screen.
+Validation for email and password fields.
+Protected screen accessible only after successful login + MFA.
+Optional support for different user roles:
+Read-only: no edit actions visible.
+Read/write: edit actions enabled.
+
+Tech Stack
+Next.js (React framework)
+Cypress (GUI test runner for E2E tests)
+Mock authentication (no database required)
+
 
 ## Getting Started
+# Prerequisites
 
-First, run the development server:
+Make sure you have Node.js installed (v16+ recommended) and npm or yarn.
 
-```bash
+# Install Dependencies
+# Using npm
+npm install
+
+# Or using yarn
+yarn install
+
+# Start the development server:
+# Using npm
 npm run dev
-# or
+
+# Using yarn
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to: http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Running Tests (Cypress GUI)
+Cypress is used to test login, MFA, and access control flows.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Open Cypress GUI
+npx cypress open
 
-## Learn More
+# Or using yarn
+yarn cypress open
 
-To learn more about Next.js, take a look at the following resources:
+In the Cypress GUI, select your test spec file (e.g., login.spec.ts).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The GUI will run the test cases interactively, showing the browser and commands as they execute.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ensure your Next.js app is running (npm run dev) while executing Cypress tests.
