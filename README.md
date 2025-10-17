@@ -49,7 +49,7 @@ npx cypress open
 ### Or using yarn
 yarn cypress open
 
-In the Cypress GUI, select your test spec file (e.g., login.cy.ts). Run these tests in e2e on Google Chrome. 
+In the Cypress GUI, select your test spec file (login.cy.ts). Run these tests in e2e on Google Chrome. 
 
 The GUI will run the test cases interactively, showing the browser and commands as they execute.
 
