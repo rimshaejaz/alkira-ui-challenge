@@ -51,10 +51,10 @@ This will install Cypress if necessary and open the Cypress Test Runner.
 
 7. **Run the Tests**  
 In Cypress interface:  
-    Select E2E Testing  
-    Choose Chrome (or preferred browser) 
-    Your test spec file (login.cy.ts) is locating at cypress/e2e/login.cy.ts  
-    Click on login.cy.ts to run these tests  
+    Select E2E Testing.    
+    Choose Chrome (or preferred browser). 
+    Your test spec file (login.cy.ts) is located at cypress/e2e/login.cy.ts    
+    Click on login.cy.ts to run these tests.  
 
 If login.cy.ts does not appear:  
     "Click Create New Spec"
