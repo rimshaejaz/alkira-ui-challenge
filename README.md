@@ -44,7 +44,7 @@ While the server is running, open a new terminal window and navigate to the proj
 6. **Open Cypress**  
 Cypress is used to test login, MFA, and access control flows.   
   
-npx cypress open 
+Using npm: npx cypress open 
 Using yarn: yarn cypress open  
 
 This will install Cypress if necessary and open the Cypress Test Runner.  
